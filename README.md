@@ -6,6 +6,12 @@ Two 4:1 planetary stages in series, with the ring gear doubling as the gearbox h
 This design is a rebuild of the gearbox from [How To Mechatronics — How Planetary Gears Work](https://howtomechatronics.com/how-it-works/how-planetary-gears-work-3d-printed-planetary-gearbox-design-and-test/)
 (originally modelled in Onshape). The STLs here are the printable output.
 
+## Demo
+
+[![3D-printed gearbox running](media/gearbox-demo.gif)](media/gearbox-demo.mp4)
+
+*Bench test of the printed gearbox. The GIF is a 5 s preview — [watch the full 59 s video](media/gearbox-demo.mp4).*
+
 ---
 
 ## Design specifications
