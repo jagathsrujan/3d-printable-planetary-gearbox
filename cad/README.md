@@ -16,7 +16,9 @@ board. No screws are needed; the four M3 holes are optional retention.
 
 ## Interfaces
 
-**Motor** — 42.3 × 42.3 × 38 mm body, 4 mm corner chamfers, 4 × M3 at 31 × 31 mm,
+**Motor** — the real motor measures 42.0 × 42.0 mm with calipers, and the holder
+is sized to that. The reference model is still the nominal 42.3 × 42.3 × 38 mm body
+(so it overlaps the socket walls in the assembly), 4 mm corner chamfers, 4 × M3 at 31 × 31 mm,
 Ø22 × 2 mm front boss, Ø5 × 23.5 mm front D-shaft, Ø12 × 2 mm rear boss.
 The model adds a Ø5 × 2.5 mm rear shaft carrying the magnet.
 
@@ -28,10 +30,10 @@ The model adds a Ø5 × 2.5 mm rear shaft carrying the magnet.
 
 | Feature | Value |
 | --- | --- |
-| Overall | 46.3 × 46.3 × 18 mm (10 mm plate + 8 mm skirt) |
-| Motor socket | 42.7 × 42.7 × 8 mm, R4.5 (0.2 mm/side clearance) |
-| Grip ribs | 3 × 0.25 mm high × 8 × 4 mm on +Y, +X, −X walls |
-| Effective motor grip | 42.2 mm → ≈0.05 mm/side press, not a rigid 0.15 mm |
+| Overall | 46.3 × 46.3 × 11 mm (3 mm plate + 8 mm skirt; plate was 10 mm before r3) |
+| Motor socket | 42.2 × 42.2 × 8 mm on the straight walls (0.1 mm/side clearance on the measured 42.0 mm body); corners stay at 42.7, R4.5 |
+| Grip ribs | 0.25 mm high crush ribs with 45° lead-in, z 2.5–7: 8 mm wide on +Y, +X, −X; 2 × 5 mm wide on −Y either side of the connector opening |
+| Effective motor grip | 41.7 mm in both X and Y → 0.15 mm/side press on a 42.0 mm motor (r2; r1 gripped at 42.2 in X / 42.45 in Y and was loose) |
 | Corner reliefs | 4 × 4 mm wide × 7 mm deep, R1 bottom; leaves a **1 mm living hinge** |
 | Mouth lead-in | 1 mm deep × 2 mm wide counterbore (44.7 mm) |
 | Board pocket | 23.2 × 23.2 × 1.9 mm deep, R1 corners |
@@ -49,8 +51,15 @@ board, 0.25 mm per side on a 23.1 mm board. The short (Y) direction has 23.2 mm
 opening — 0.35 mm total clearance on a 22.5 mm board — so print tolerance does
 not fight the snap.
 
-**Air gap.** Chip face z = −6.35, magnet face z = −5.0: **1.35 mm**. Target
-0.5–3 mm; move the magnet on the rear shaft with a 0.5–1 mm spacer if needed.
+**Air gap (r3).** The magnet sits on the shaft end *inside* the hole in the motor's
+back plate, so the old 10 mm plate left the chip 6.35 mm + the recess depth away and
+the AS5600 could not see it. Measured: magnet face 3 mm below the rear face,
+magnet Ø6 × 2 mm. The plate is now **3.0 mm** (r4): the board's chip-side face sits
+1.1 mm off the rear face (the header pin tips stick out 0.99 mm) and the chip
+reaches **0.65 mm into the rear hole**. Gap = 3.0 − 0.65 = **2.35 mm** (target
+0.5–3 mm). The hole is taken as Ø8.6 mm, estimated from a photo, which leaves
+1.2 mm around the chip corners. The four corner holes are now plain Ø6.5 through
+holes (no screw seat left); they clear the motor's rear screw heads.
 
 ## Print (PLA)
 
